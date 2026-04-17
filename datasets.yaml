@@ -1,0 +1,31 @@
+datasets:
+  visdrone:
+    data: data/visdrone/data.yaml
+    project: runs/visdrone
+    name: yolov8m_visdrone
+    epochs: 50
+    batch: 4
+    workers: 2
+    patience: 10
+    save_period: 5
+    optimizer: AdamW
+    lr0: 0.001
+    lrf: 0.01
+    warmup_epochs: 3
+    cache: false
+  dfire:
+    data: data/dfire/data.yaml
+    project: runs/dfire
+    name: yolov8m_dfire
+    epochs: 50
+    batch: 8
+    workers: 4
+    patience: 10
+    save_period: 5
+    optimizer: AdamW
+    lr0: 0.001
+    lrf: 0.01
+    warmup_epochs: 3
+    mosaic: 1.0
+    close_mosaic: 10
+    cache: false
