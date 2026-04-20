@@ -1,3 +1,5 @@
 # Ignore dataset folder
 data/
 zip files/
+web_uploads/
+web_results/
